@@ -1,29 +1,34 @@
+import reactImage from '@/assets/images/react.png'
+
 export type Product = {
-  id: number;
-  name: string;
-  price: number;
-  oldPrice?: number;
-  image: string;
-  description: string;
-  views: number;
-  duration: string;
-};
+  id: number
+  name: string
+  price: number
+  oldPrice?: number
+  image: string
+  description: string
+  views: number
+  duration: string
+  rating?: number
+}
 
 export const communicateList: Product[] = [
   {
     id: 1,
     name: 'Giao tiếp cơ bản',
     price: 0,
-    image: '/images/a.jpg',
-    description: 'Tự tin nói chuyện',
+    image: reactImage,
+    description:
+      'Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện Tự tin nói chuyện ',
     views: 300,
     duration: '20h',
+    rating: 3.0,
   },
   {
     id: 2,
     name: 'Giao tiếp cơ bản',
     price: 0,
-    image: '/images/a.jpg',
+    image: reactImage,
     description: 'Tự tin nói chuyện',
     views: 300,
     duration: '20h',
@@ -83,7 +88,7 @@ export const communicateList: Product[] = [
     duration: '20h',
   },
   // ...
-];
+]
 
 export const toeicList: Product[] = [
   {
@@ -141,7 +146,7 @@ export const toeicList: Product[] = [
     name: 'TOEIC 450+',
     price: 990000,
     oldPrice: 1500000,
-    image: '/images/toeic.jpg',
+    image: '@/assets/images/react.png',
     description: 'Luyện thi Toeic cơ bản',
     views: 500,
     duration: '35h',
@@ -188,7 +193,7 @@ export const toeicList: Product[] = [
   },
 
   // ...
-];
+]
 
 export const ieltsList: Product[] = [
   {
@@ -201,4 +206,4 @@ export const ieltsList: Product[] = [
     duration: '50h',
   },
   // ...
-];
+]
