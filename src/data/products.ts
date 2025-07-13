@@ -1,0 +1,204 @@
+export type Product = {
+  id: number;
+  name: string;
+  price: number;
+  oldPrice?: number;
+  image: string;
+  description: string;
+  views: number;
+  duration: string;
+};
+
+export const communicateList: Product[] = [
+  {
+    id: 1,
+    name: 'Giao tiếp cơ bản',
+    price: 0,
+    image: '/images/a.jpg',
+    description: 'Tự tin nói chuyện',
+    views: 300,
+    duration: '20h',
+  },
+  {
+    id: 2,
+    name: 'Giao tiếp cơ bản',
+    price: 0,
+    image: '/images/a.jpg',
+    description: 'Tự tin nói chuyện',
+    views: 300,
+    duration: '20h',
+  },
+  {
+    id: 3,
+    name: 'Giao tiếp cơ bản',
+    price: 0,
+    image: '/images/a.jpg',
+    description: 'Tự tin nói chuyện',
+    views: 300,
+    duration: '20h',
+  },
+  {
+    id: 4,
+    name: 'Giao tiếp cơ bản',
+    price: 0,
+    image: '/images/a.jpg',
+    description: 'Tự tin nói chuyện',
+    views: 300,
+    duration: '20h',
+  },
+  {
+    id: 5,
+    name: 'Giao tiếp cơ bản',
+    price: 0,
+    image: '/images/a.jpg',
+    description: 'Tự tin nói chuyện',
+    views: 300,
+    duration: '20h',
+  },
+  {
+    id: 5,
+    name: 'Giao tiếp cơ bản',
+    price: 0,
+    image: '/images/a.jpg',
+    description: 'Tự tin nói chuyện',
+    views: 300,
+    duration: '20h',
+  },
+  {
+    id: 7,
+    name: 'Giao tiếp cơ bản',
+    price: 0,
+    image: '/images/a.jpg',
+    description: 'Tự tin nói chuyện',
+    views: 300,
+    duration: '20h',
+  },
+  {
+    id: 8,
+    name: 'Giao tiếp cơ bản',
+    price: 0,
+    image: '/images/a.jpg',
+    description: 'Tự tin nói chuyện',
+    views: 300,
+    duration: '20h',
+  },
+  // ...
+];
+
+export const toeicList: Product[] = [
+  {
+    id: 10,
+    name: 'TOEIC 450+',
+    price: 990000,
+    oldPrice: 1500000,
+    image: '/images/toeic.jpg',
+    description: 'Luyện thi Toeic cơ bản',
+    views: 500,
+    duration: '35h',
+  },
+  {
+    id: 11,
+    name: 'TOEIC 450+',
+    price: 990000,
+    oldPrice: 1500000,
+    image: '/images/toeic.jpg',
+    description: 'Luyện thi Toeic cơ bản',
+    views: 500,
+    duration: '35h',
+  },
+  {
+    id: 12,
+    name: 'TOEIC 450+',
+    price: 990000,
+    oldPrice: 1500000,
+    image: '/images/toeic.jpg',
+    description: 'Luyện thi Toeic cơ bản',
+    views: 500,
+    duration: '35h',
+  },
+  {
+    id: 13,
+    name: 'TOEIC 450+',
+    price: 990000,
+    oldPrice: 1500000,
+    image: '/images/toeic.jpg',
+    description: 'Luyện thi Toeic cơ bản',
+    views: 500,
+    duration: '35h',
+  },
+  {
+    id: 14,
+    name: 'TOEIC 450+',
+    price: 990000,
+    oldPrice: 1500000,
+    image: '/images/toeic.jpg',
+    description: 'Luyện thi Toeic cơ bản',
+    views: 500,
+    duration: '35h',
+  },
+  {
+    id: 15,
+    name: 'TOEIC 450+',
+    price: 990000,
+    oldPrice: 1500000,
+    image: '/images/toeic.jpg',
+    description: 'Luyện thi Toeic cơ bản',
+    views: 500,
+    duration: '35h',
+  },
+  {
+    id: 16,
+    name: 'TOEIC 450+',
+    price: 990000,
+    oldPrice: 1500000,
+    image: '/images/toeic.jpg',
+    description: 'Luyện thi Toeic cơ bản',
+    views: 500,
+    duration: '35h',
+  },
+  {
+    id: 17,
+    name: 'TOEIC 450+',
+    price: 990000,
+    oldPrice: 1500000,
+    image: '/images/toeic.jpg',
+    description: 'Luyện thi Toeic cơ bản',
+    views: 500,
+    duration: '35h',
+  },
+  {
+    id: 18,
+    name: 'TOEIC 450+',
+    price: 990000,
+    oldPrice: 1500000,
+    image: '/images/toeic.jpg',
+    description: 'Luyện thi Toeic cơ bản',
+    views: 500,
+    duration: '35h',
+  },
+  {
+    id: 19,
+    name: 'TOEIC 450+',
+    price: 990000,
+    oldPrice: 1500000,
+    image: '/images/toeic.jpg',
+    description: 'Luyện thi Toeic cơ bản',
+    views: 500,
+    duration: '35h',
+  },
+
+  // ...
+];
+
+export const ieltsList: Product[] = [
+  {
+    id: 20,
+    name: 'IELTS Foundation',
+    price: 1290000,
+    image: '/images/ielts.jpg',
+    description: 'Chuẩn bị band 5.5+',
+    views: 400,
+    duration: '50h',
+  },
+  // ...
+];
