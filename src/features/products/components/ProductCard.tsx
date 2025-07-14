@@ -1,13 +1,8 @@
-import { Eye, Clock, Heart } from 'lucide-react'
-import type { Product } from '@/features/products/data/products.ts'
-import { useFavorites } from '@/features/products/hooks/useFavorites.ts'
+import { Eye, Clock, Bookmark } from 'lucide-react'
+import { useFavorites } from '@/features/favorites/hooks/useFavorites.ts'
+import type { ProductCardProps } from '@/features/products/types/product.type.ts'
 
-type Props = {
-  product: Product
-  onClick?: () => void
-}
-
-const ProductCard = ({ product, onClick }: Props) => {
+const ProductCard = ({ product, onClick }: ProductCardProps) => {
   const { isFavorite, toggleFavorite } = useFavorites()
 
   return (
@@ -22,12 +17,12 @@ const ProductCard = ({ product, onClick }: Props) => {
           e.stopPropagation()
           toggleFavorite(product)
         }}
-        className="absolute right-2 top-2 z-10 text-white/70 hover:text-orange-500"
+        className="absolute right-2 top-2 z-10 text-white/70 hover:text-yellow-500"
       >
         {isFavorite(product) ? (
-          <Heart className="h-5 w-5 fill-red-500 text-red-500" />
+          <Bookmark className="h-6 w-5 fill-yellow-500 text-yellow-500 md:h-7 md:w-7" />
         ) : (
-          <Heart className="h-5 w-5" />
+          <Bookmark className="h-6 w-5 hover:fill-yellow-500 md:h-7 md:w-7" />
         )}
       </button>
 
@@ -39,9 +34,7 @@ const ProductCard = ({ product, onClick }: Props) => {
 
         <div className="grid grid-cols-1 sm:grid-cols-3">
           {product.oldPrice && (
-            <p className="text-md text-gray-400 line-through">
-              {product.oldPrice.toLocaleString()}đ
-            </p>
+            <p className="text-md text-gray-400 line-through">{product.oldPrice.toLocaleString()}đ</p>
           )}
           <p className="font-bold text-orange-500 sm:ml-2">{product.price.toLocaleString()}đ</p>
         </div>

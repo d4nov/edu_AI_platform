@@ -1,7 +1,7 @@
-import Header from '@/shared/components/ui/Navbar.tsx'
-import Sidebar from '@/shared/components/ui/Sidebar.tsx'
+import Header from '@/ui/Navbar.tsx'
+import Sidebar from '@/ui/Sidebar.tsx'
 import { Outlet } from 'react-router-dom'
-import BottomNav from '@/shared/components/ui/BottomNav.tsx'
+import BottomNav from '@/ui/BottomNav.tsx'
 
 const Layout = () => {
   return (

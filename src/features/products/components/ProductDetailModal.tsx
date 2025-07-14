@@ -1,14 +1,9 @@
-import { type Product } from '@/features/products/data/products.ts'
-import Modal from '@/shared/components/ui/Modal.tsx'
-import RatingStars from '@/shared/components/ui/RatingStars.tsx'
+import Modal from '@/ui/Modal.tsx'
+import RatingStars from '@/ui/RatingStars.tsx'
 import { useState } from 'react'
+import type { ProductDetailProps } from '@/features/products/types/product.type.ts'
 
-type Props = {
-  product: Product | null
-  onClose: () => void
-}
-
-const ProductDetailModal = ({ product, onClose }: Props) => {
+const ProductDetailModal = ({ product, onClose }: ProductDetailProps) => {
   const [descExpanded, setDescExpanded] = useState(false)
   if (!product) return null
 
@@ -19,9 +14,7 @@ const ProductDetailModal = ({ product, onClose }: Props) => {
         <h2 className="text-xl font-bold">{product.name}</h2>
 
         <div className="text-sm text-gray-700">
-          <p className={`${descExpanded ? '' : 'line-clamp-5'} whitespace-pre-line`}>
-            {product.description}
-          </p>
+          <p className={`${descExpanded ? '' : 'line-clamp-5'} whitespace-pre-line`}>{product.description}</p>
           {product.description.length > 200 && (
             <button
               onClick={() => setDescExpanded((prev) => !prev)}
@@ -44,9 +37,7 @@ const ProductDetailModal = ({ product, onClose }: Props) => {
 
         <div className="text-lg font-semibold text-orange-600">
           {product.oldPrice && (
-            <span className="mr-2 text-base text-gray-400 line-through">
-              {product.oldPrice.toLocaleString()}đ
-            </span>
+            <span className="mr-2 text-base text-gray-400 line-through">{product.oldPrice.toLocaleString()}đ</span>
           )}
           {product.price.toLocaleString()}đ
         </div>

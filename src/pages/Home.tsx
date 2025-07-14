@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { ProductList, ProductDetailModal } from '@/features/products/components'
 
-import { communicateList, ieltsList, toeicList, type Product } from '@/features/products/data/products.ts'
+import { communicateList, ieltsList, toeicList } from '@/features/products/data/products.ts'
+import type { Product } from '@/features/products/types/product.type.ts'
 
 const Home = () => {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null)
