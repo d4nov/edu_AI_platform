@@ -1,8 +1,8 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from '@/pages/Home.tsx';
-import Favorites from '@/pages/Favorites.tsx';
-import ViewHistory from '@/pages/ViewHistory.tsx';
-import Layout from '@/layouts/Layout';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from '@/features/products/pages/Home.tsx'
+import Favorites from '@/features/products/pages/Favorites.tsx'
+import ViewHistory from '@/features/products/pages/ViewHistory.tsx'
+import Layout from '@/layouts/Layout'
 
 export default function AppRoutes() {
   return (
@@ -15,5 +15,5 @@ export default function AppRoutes() {
         </Route>
       </Routes>
     </BrowserRouter>
-  );
+  )
 }

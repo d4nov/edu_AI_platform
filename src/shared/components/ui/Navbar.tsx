@@ -1,13 +1,13 @@
-import { Bell, LogIn, LogOut, Search } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { Bell, LogIn, LogOut, Search } from 'lucide-react'
+import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 const Navbar = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
 
   const toggleLogin = () => {
-    setIsLoggedIn(!isLoggedIn);
-  };
+    setIsLoggedIn(!isLoggedIn)
+  }
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-white shadow-sm">
       <div className="mx-auto flex h-14 max-w-full items-center justify-between px-4 md:px-6">
@@ -15,7 +15,7 @@ const Navbar = () => {
           Edu<span className="text-gray-800">AI</span>
         </Link>
 
-        <div className="mx-3 flex-1 px-8 md:px-28 lg:px-48 xl:px-80">
+        <div className="mx-3 flex-1 px-8 md:px-28 lg:px-48 xl:px-96">
           <div className="relative">
             <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-gray-400" />
             <input
@@ -53,7 +53,7 @@ const Navbar = () => {
         </div>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

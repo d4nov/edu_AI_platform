@@ -1,15 +1,15 @@
-import { Home, CalendarHeart, Clock } from 'lucide-react';
-import { NavLink } from 'react-router-dom';
+import { Home, CalendarHeart, Clock } from 'lucide-react'
+import { NavLink } from 'react-router-dom'
 
 const sidebarItems = [
   { label: 'Trang chủ', icon: <Home />, to: '/' },
   { label: 'Yêu thích', icon: <CalendarHeart />, to: '/favorites' },
   { label: 'Đã xem', icon: <Clock />, to: '/view-history' },
-];
+]
 
 const Sidebar = () => {
   return (
-    <aside className="hidden w-24 flex-col items-center gap-4 bg-white px-2 pt-4 md:flex">
+    <aside className="sticky top-0 z-20 hidden h-screen w-24 flex-shrink-0 flex-col items-center gap-4 overflow-y-auto px-2 pt-4 md:flex">
       {sidebarItems.map((item) => (
         <NavLink
           key={item.to}
@@ -25,7 +25,7 @@ const Sidebar = () => {
         </NavLink>
       ))}
     </aside>
-  );
-};
+  )
+}
 
-export default Sidebar;
+export default Sidebar

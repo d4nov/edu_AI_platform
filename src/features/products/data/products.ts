@@ -1,4 +1,4 @@
-import reactImage from '@/assets/images/react.png'
+import reactImage from '@/shared/components/assets/images/react.png'
 
 export type Product = {
   id: number

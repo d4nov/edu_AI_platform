@@ -1,6 +1,6 @@
 import { Eye, Clock, Heart } from 'lucide-react'
-import { useFavorites } from '@/hooks/useFavorites'
-import type { Product } from '@/data/products.ts'
+import type { Product } from '@/features/products/data/products.ts'
+import { useFavorites } from '@/features/products/hooks/useFavorites.ts'
 
 type Props = {
   product: Product
