@@ -38,13 +38,18 @@ const Navbar = ({ onSearch, onSuggestClick }: NavbarProps) => {
         </div>
 
         <div className="flex items-center gap-4">
-          <button className="relative">
+          <button className="group relative">
             <ShoppingBag className="h-6 w-6 text-gray-600 transition hover:text-primary" />
+            <span className="absolute right-0 top-0 h-2 w-2 rounded-full bg-red-500" />
+
+            <div className="absolute left-1/2 top-7 -translate-x-1/2 whitespace-nowrap rounded bg-black px-2 py-1 text-xs text-white opacity-0 transition group-hover:opacity-100">
+              Giỏ hàng tượng trưng
+            </div>
           </button>
 
           <button
             onClick={onSuggestClick}
-            className="text-md hidden rounded-full bg-orange-500 px-5 py-2 font-semibold text-white hover:bg-orange-600 md:inline"
+            className="text-md hidden rounded-full bg-orange-500 px-5 py-1.5 font-semibold text-white hover:bg-orange-600 md:inline"
           >
             Gợi ý sản phẩm phù hợp
           </button>

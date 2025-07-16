@@ -93,9 +93,13 @@ const Chatbot = ({ onSelectProduct }: ChatbotProps) => {
       {!isOpen && (
         <button
           onClick={() => setIsOpen(true)}
-          className="fixed bottom-16 right-2 z-50 rounded-full bg-primary p-3 text-white shadow-lg hover:bg-orange-600 md:bottom-8 md:right-8"
+          className="group fixed bottom-16 right-2 z-40 rounded-full bg-primary p-3 text-white shadow-lg hover:bg-orange-600 md:bottom-8 md:right-8"
         >
           <MessageCircle className="h-8 w-8 md:h-10 md:w-10" />
+
+          <div className="absolute -top-10 -translate-x-1/2 whitespace-nowrap rounded bg-black px-2 py-1 text-xs text-white opacity-0 transition group-hover:opacity-100">
+            Trò chuyện cùng Chatbot
+          </div>
         </button>
       )}
 

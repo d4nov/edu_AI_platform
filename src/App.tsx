@@ -4,7 +4,6 @@ import Chatbot from '@/features/chatbot/components/Chatbot.tsx'
 import { ProductDetailModal } from '@/features/products/components'
 import { useState } from 'react'
 import type { Product } from '@/features/products/types/product.type.ts'
-import ErrorBoundary from './components/ErrorBoundary'
 
 function App() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null)
@@ -12,10 +11,8 @@ function App() {
     <div className="min-h-screen bg-gray-50 font-sans">
       <AppRoutes />
       <Toaster position="top-center" />
-      <ErrorBoundary fallback={<p className="text-red-500">Đã có lỗi khi hiển thị chi tiết khoá học.</p>}>
-        <Chatbot onSelectProduct={setSelectedProduct} />
-        <ProductDetailModal product={selectedProduct} onClose={() => setSelectedProduct(null)} />
-      </ErrorBoundary>
+      <Chatbot onSelectProduct={setSelectedProduct} />
+      <ProductDetailModal product={selectedProduct} onClose={() => setSelectedProduct(null)} />
     </div>
   )
 }

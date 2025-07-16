@@ -39,7 +39,7 @@ const ProductCard = ({ product, onClick }: ProductCardProps) => {
           <p className="font-bold text-orange-500 sm:ml-2">{product.price.toLocaleString()}đ</p>
         </div>
 
-        <div className="mt-auto flex items-center justify-between gap-4 text-xs text-gray-500">
+        <div className="mt-auto flex items-center justify-between gap-4 text-xs text-gray-500 md:text-sm">
           <div className="flex items-center gap-1">
             <Clock className="h-4 w-4" />
             {product.duration}
