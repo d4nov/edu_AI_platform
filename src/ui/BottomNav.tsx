@@ -1,11 +1,11 @@
-import { Home, Clock, CalendarHeart } from 'lucide-react';
-import { NavLink } from 'react-router-dom';
+import { Home, Clock, CalendarHeart } from 'lucide-react'
+import { NavLink } from 'react-router-dom'
 
 const items = [
   { label: 'Trang chủ', icon: <Home size={20} />, to: '/' },
   { label: 'Yêu thích', icon: <CalendarHeart size={20} />, to: '/favorites' },
   { label: 'Đã xem', icon: <Clock size={20} />, to: '/view-history' },
-];
+]
 
 const BottomNav = () => {
   return (
@@ -23,7 +23,7 @@ const BottomNav = () => {
         </NavLink>
       ))}
     </nav>
-  );
-};
+  )
+}
 
-export default BottomNav;
+export default BottomNav

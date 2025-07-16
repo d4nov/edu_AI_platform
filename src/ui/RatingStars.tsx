@@ -16,13 +16,7 @@ const RatingStars = ({ rating }: Props) => {
       ))}
       {hasHalf && <StarHalf size={16} />}
       {[...Array(emptyStars)].map((_, i) => (
-        <StarOutline
-          key={`empty-${i}`}
-          size={16}
-          className="text-gray-300"
-          fill="none"
-          stroke="currentColor"
-        />
+        <StarOutline key={`empty-${i}`} size={16} className="text-gray-300" fill="none" stroke="currentColor" />
       ))}
     </div>
   )

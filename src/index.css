@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.loader {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ccc transparent transparent transparent;
+}
