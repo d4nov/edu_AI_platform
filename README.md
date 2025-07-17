@@ -1,69 +1,75 @@
-# React + TypeScript + Vite
+# 🎓 Edu AI Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Nền tảng thương mại điện tử tích hợp AI dành riêng cho các khóa học trực tuyến như Giao tiếp, TOEIC, IELTS,... Giao diện thân thiện, hỗ trợ tìm kiếm, lọc, gợi ý thông minh và chatbot tư vấn học tập.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tính năng nổi bật
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- ✅ Giao diện hiện đại, responsive trên mọi thiết bị
+- 🔍 Tìm kiếm & lọc sản phẩm theo từ khóa
+- 🤖 Gợi ý khóa học thông minh từ AI chatbot
+- 🧠 Lưu lịch sử hỏi đáp & gợi ý từ khóa dưới ô nhập
+- 💬 Chatbot hiển thị luôn card khoá học phù hợp
+- 🌟 Đánh giá sao, mô tả chi tiết, số lượt xem và thời lượng hợp lý
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## 🛠️ Công nghệ sử dụng
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- ⚛️ React + TypeScript
+- 💨 Tailwind CSS
+- 🔁 React Router DOM
+- 🧩 Lucide Icons
+- 📋 React Hook Form
+- 📦 Context API (global state)
+- 🧪 Vite (dev server & build tool)
+
+---
+
+## 📦 Cài đặt
+
+### 1. Clone repo
+
+```
+git clone https://github.com/d4nov/edu_AI_platform.git
+cd edu_AI_platform
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Cài đặt dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+pnpm install
+# hoặc
+yarn
+```
+
+### 3. Chạy ứng dụng (Dev)
+
+```
+pnpm run dev
+# hoặc
+yarn dev
+Truy cập tại: http://localhost:5173
+```
+
+### 4. Build Production
+
+```
+pnpm run build
+# hoặc
+yarn build
+```
+
+### 5. Preview production build
+
+```
+pnpm run preview
+# hoặc
+yarn preview
+```
+
+Giấy phép
+MIT License © 2025 Dlee
+
