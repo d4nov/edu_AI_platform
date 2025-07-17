@@ -13,6 +13,7 @@ Nền tảng thương mại điện tử tích hợp AI dành riêng cho các kh
 - 🧠 Lưu lịch sử hỏi đáp & gợi ý từ khóa dưới ô nhập
 - 💬 Chatbot hiển thị luôn card khoá học phù hợp
 - 🌟 Đánh giá sao, mô tả chi tiết, số lượt xem và thời lượng hợp lý
+- Một số tính năng sẽ được phát triển và mở rộng thêm...
 
 ---
 
