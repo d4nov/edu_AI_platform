@@ -36,7 +36,7 @@ const ProductCard = ({ product, onClick }: ProductCardProps) => {
           {product.oldPrice && (
             <p className="text-md text-gray-400 line-through">{product.oldPrice.toLocaleString()}đ</p>
           )}
-          <p className="font-bold text-orange-500 sm:ml-2">{product.price.toLocaleString()}đ</p>
+          <p className="font-bold text-orange-500 lg:ml-2 xl:ml-0">{product.price.toLocaleString()}đ</p>
         </div>
 
         <div className="mt-auto flex items-center justify-between gap-4 text-xs text-gray-500 md:text-sm">
