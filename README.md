@@ -51,8 +51,9 @@ yarn
 pnpm run dev
 # hoặc
 yarn dev
-Truy cập tại: http://localhost:5173
 ```
+### Truy cập tại: http://localhost:5173
+
 
 ### 4. Build Production
 
@@ -70,6 +71,6 @@ pnpm run preview
 yarn preview
 ```
 
-Giấy phép
+## Giấy phép
 MIT License © 2025 Dlee
 
